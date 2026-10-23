@@ -1,0 +1,71 @@
+/* Navbar Sticky & Responsive */
+.navbar {
+    background-color: #0b0f19;
+    border-bottom: 1px solid var(--card-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.8rem 15px;
+    /* Activation du scroll horizontal sur petits écrans */
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Défilement fluide iOS */
+    scrollbar-width: none; /* Masque la barre de défilement sur Firefox */
+}
+
+/* Masque la barre de défilement sur Chrome / Safari */
+.nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    flex-shrink: 0; /* Empêche le texte de se comprimer */
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links .btn-email {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.nav-links .btn-email:hover {
+    background-color: #e5e7eb;
+}
+
+/* Media Queries spécifique aux smartphones (écrans < 600px) */
+@media (max-width: 600px) {
+    .nav-links {
+        justify-content: flex-start; /* Aligne au début pour permettre le swipe horizontal */
+        padding: 0.7rem 15px;
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .nav-links .btn-email {
+        padding: 0.25rem 0.75rem;
+    }
+}
