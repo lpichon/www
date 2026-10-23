@@ -87,7 +87,7 @@ body {
     border: 1px solid var(--card-border);
 }
 
-/* Navbar Centrée */
+/* Navbar Centrée & Responsive */
 .navbar {
     background-color: #0b0f19;
     border-bottom: 1px solid var(--card-border);
@@ -96,13 +96,30 @@ body {
     z-index: 100;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0.8rem 20px;
+}
+
+/* Bouton Hamburger (caché sur PC) */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
 .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    padding: 0.8rem 20px;
-    overflow-x: auto;
 }
 
 .nav-links a {
@@ -128,6 +145,36 @@ body {
 
 .nav-links .btn-email:hover {
     background-color: #e5e7eb;
+}
+
+/* Media Query pour Mobile & Tablette */
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: flex-end; /* Alignement du bouton hamburger à droite */
+    }
+
+    .nav-toggle {
+        display: block; /* Affichage du bouton hamburger */
+    }
+
+    .nav-links {
+        display: none; /* Cache les liens par défaut */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--card-bg);
+        border-bottom: 1px solid var(--card-border);
+        padding: 1.5rem 0;
+        gap: 1.2rem;
+        box-shadow: var(--shadow);
+    }
+
+    /* Classe activée en JS lors du clic */
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 /* Content & Cards */
