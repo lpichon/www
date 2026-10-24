@@ -238,7 +238,21 @@
         <div class="container text-center">
             <p>&copy; Pichon Ludovic : 2020-2026</p>
             <div class="footer-links">
-                <a href="mailto:contact@pichon.xyz"><i class="fas fa-envelope"></i> E-Mail</a>
+                <a  href=" " class="button primary icon solid fa-download" onclick='openMailer(this);'><i class="fas fa-envelope"></i>E-Mail</a>
+                        <script type="text/javascript">
+                        function decode(a) {
+                        return a.replace(/[a-zA-Z]/g, function(c){
+                            return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13)
+                                                    ? c : c - 26);
+                        })
+                        };
+                        function openMailer(element) {
+                        var y = decode("znvygb:yhqbivp@cvpuba.klm");
+                        element.setAttribute("href", y);
+                        element.setAttribute("onclick", "");
+                        element.firstChild.nodeValue = "E-Mail";
+                        };
+                        </script>
                 <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
