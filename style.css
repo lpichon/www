@@ -297,7 +297,7 @@ body {
 
 .skills-list li {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
@@ -311,7 +311,7 @@ body {
 
 .tag-personal {
     font-size: 0.75rem;
-    color: #c7cdd7;
+    color: #ffffff;
     font-weight: 600;
 }
 
