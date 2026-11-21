@@ -1,0 +1,13 @@
+# Pichon.xyz
+
+> Site web personnel de type curriculum vitae présentant mon parcours professionnel, mes activités, ainsi que mes domaines de passion et d'expertise.
+
+Ce site s'adresse aux recruteurs, clients potentiels, partenaires et pairs souhaitant découvrir mon profil, mes compétences techniques et mes réalisations.
+
+## Pages principales
+
+- [Accueil](https://www.pichon.xyz/): Présentation générale, résumé de mon profil et accès direct aux différentes sections de mon parcours.
+- [Parcours & Expériences](https://www.pichon.xyz/#parcours): Détail de mes expériences professionnelles, postes occupés et missions clés.
+- [Compétences & Expertises](https://www.pichon.xyz/#competences): Savoir-faire techniques, méthodologies et domaines de spécialisation.
+- [Projets & Réalisations](https://www.pichon.xyz/#projets): Sélection de travaux, projets personnels et contributions.
+- [Formation](https://www.pichon.xyz/#formation): Diplômes, certifications et parcours académique.
